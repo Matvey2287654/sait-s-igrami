@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Скачать игры для ПК</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>GameHub</h1>
+        <p>Лучшие бесплатные игры для ПК</p>
+    </header>
+
+    <main>
+        <div class="game-card">
+            <img src="https://via.placeholder.com/300x200?text=Minecraft" alt="Minecraft">
+            <h2>Minecraft</h2>
+            <p>Открытый мир с бесконечными возможностями!</p>
+            <button class="download-btn" data-game="minecraft">Скачать</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://via.placeholder.com/300x200?text=Among+Us" alt="Among Us">
+            <h2>Among Us</h2>
+            <p>Выяви предателя среди членов экипажа!</p>
+            <button class="download-btn" data-game="amongus">Скачать</button>
+        </div>
+
+        <div class="game-card">
+            <img src="https://via.placeholder.com/300x200?text=GTA+V" alt="GTA V">
+            <h2>GTA V</h2>
+            <p>Грандиозная криминальная сага в Лос-Сантосе.</p>
+            <button class="download-btn" data-game="gtav">Скачать</button>
+        </div>
+    </main>
+
+    <div id="download-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Скачать <span id="game-name"></span></h2>
+            <p>Нажмите на ссылку для загрузки:</p>
+            <a id="download-link" href="#" class="download-link">Скачать сейчас</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
